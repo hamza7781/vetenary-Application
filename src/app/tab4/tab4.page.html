@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Search, Edit and Delete </ion-title>
+  </ion-toolbar> 
+</ion-header>
+
+<ion-content padding class="background" [fullscreen]="true">
+  <h2>Pet information</h2>
+  <p>Enter Pet name</p>
+  <section>
+    <div class="time">
+    <label for = "name">Name: </label>
+    <input type ="text" id = "name" [(ngModel)] = "name" name = "name">
+    <br>
+    <br>
+    <label for="species">Species: </label>
+    <select name = "species" [(ngModel)] = "species">
+      <option value = "Dog">Dog</option>
+      <option value = "Cat">Cat</option>
+      <option value = "Rabbit">Rabbit</option>
+      <option value = "Guinea Pig">Guinea Pig</option>
+      <option value = "Bird">Bird</option>
+      <option value = "Snake">Snake</option>
+      <option value = "Other">Other</option>
+    </select>
+    <br>
+    <br>
+    
+    <label for = "age">Age: </label>
+    <input type = "number" id = "age" [(ngModel)] = "ageString" name = "age">
+    <br>
+    <br>
+    <label for="sex">Sex: </label>
+    <select name = "sex" [(ngModel)] = "sex">
+      <option value = "Male">Male</option>
+      <option value = "Female">Female</option>
+    </select>
+    <br>
+    <br>
+    <label for = "phoneNumber">Phone Number: </label>
+    <input type = "number" id = "phoneNumber" [(ngModel)] = "phoneNumber" name = "phoneNumber">
+  </div>
+  </section>
+  <p>Name: {{name}}</p>
+  <p>Species: {{species}}</p>
+  <p>Age: {{ageString}}</p>
+  <p>Sex: {{sex}}</p>
+  <p>PhoneNumber: {{phoneNumber}}</p>
+
+  <div class= "ion-padding">
+  <ion-button type = "button" (click) = "getRecord()" value = "Search record">Search</ion-button>
+  <ion-button type = "button" (click) = "updateRecord()" value = "Update record">Update</ion-button>
+  <ion-button type = "button" (click) = "deleteRecord()" value = "Delete record">Delete</ion-button>
+  </div>
+  <br>
+  <br>
+  <p>{{message}}</p>
+  
+</ion-content>

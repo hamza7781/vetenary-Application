@@ -1,0 +1,7 @@
+{
+  "name": "vetapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

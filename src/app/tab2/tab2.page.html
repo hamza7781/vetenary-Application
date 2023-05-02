@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      View Pet Data
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background" [fullscreen]="true">
+  <h2>View Pet Data</h2>
+  <p>To check data click check button</p>
+  <br>
+  <div class="boss">
+  <ion-button type = "button" (click) = "getAllRecords()">check</ion-button>
+</div>
+  <br>
+  <p>{{allData}}</p>
+  <br>
+  <p>{{message}}</p>
+</ion-content>

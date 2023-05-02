@@ -1,0 +1,21 @@
+ion-title.hero{
+    display: flex;
+    justify-content: center;
+}
+
+ion-content.background{
+    --ion-background-color:#1c1d25;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    text-decoration: dotted;
+}
+p{
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+}
